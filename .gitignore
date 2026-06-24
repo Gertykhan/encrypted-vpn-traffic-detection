@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.env
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+flows/traffic_data_009.csv
