@@ -8,4 +8,4 @@ env/
 .DS_Store
 .idea/
 .vscode/
-flows/traffic_data_009.csv
+data/raw/traffic_data_009.csv

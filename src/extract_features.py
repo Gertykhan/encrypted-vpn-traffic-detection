@@ -19,8 +19,8 @@ def make_bidirectional_flow_id(proto, ip1, ip2, port1, port2):
 
 all_features = []
 
-# Все .csv в папке flows
-file_list = glob.glob('flows/traffic_data_*.csv')
+# Все .csv в папке data/raw
+file_list = glob.glob('data/raw/traffic_data_*.csv')
 
 for filepath in file_list:
     df = pd.read_csv(filepath)
@@ -140,6 +140,6 @@ for filepath in file_list:
 
 # Финальная сборка всех потоков в таблицу
 df_features = pd.DataFrame(all_features)
-df_features.to_csv('flows/Features_full.csv', index=False)
+df_features.to_csv('data/processed/Features_full.csv', index=False)
 
 print(df_features.describe())
